@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "serverino",
+	"version": "${version}",
+	"name": "Serverino",
+	"description": "Server-side mod for a lot of facilities and utilities.",
+	"authors": [
+		"Resial"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/serverino/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"br.com.resial.serverino.Serverino"
+		],
+		"client": [
+			"br.com.resial.serverino.ServerinoClient"
+		],
+		"fabric-datagen": [
+			"br.com.resial.serverino.ServerinoDataGenerator"
+		]
+	},
+	"mixins": [
+		"serverino.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
